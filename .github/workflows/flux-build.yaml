@@ -13,3 +13,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Flux CLI
         uses: fluxcd/flux2/action@main
+      - name: Build kustomize manifests
+        run: |
+          flux build kustomization ./demo
