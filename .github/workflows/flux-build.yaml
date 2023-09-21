@@ -1,0 +1,13 @@
+name: Flux Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  kustomize-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
