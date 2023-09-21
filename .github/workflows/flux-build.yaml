@@ -15,4 +15,4 @@ jobs:
         uses: fluxcd/flux2/action@main
       - name: Build kustomize manifests
         run: |
-          flux build kustomization ./demo
+          flux build kustomization demo-kustomization --path demo
