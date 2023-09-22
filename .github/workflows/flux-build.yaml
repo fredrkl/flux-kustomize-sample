@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  kustomize-build:
+  flux-kustomize-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -15,4 +15,4 @@ jobs:
         uses: fluxcd/flux2/action@main
       - name: Build kustomize manifests
         run: |
-          flux build kustomization demo-kustomization --kustomization-file demo/flux-kustomization.yaml --path demo
+          flux build kustomization demo-kustomization --dry-run --path ./demo --kustomization-file ./demo/flux-kustomization.yaml
