@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths-ignore:
-      - **/*.md
-      - LICENSE
+      - '**/*.md'
+      - 'LICENSE'
 
 jobs:
   flux-kustomize-build:
