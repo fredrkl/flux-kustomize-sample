@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - demo-with-error.yaml
   - demo-pod.yaml
+  - pod-security-standard-restricted.yaml
