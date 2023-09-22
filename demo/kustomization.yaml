@@ -3,4 +3,3 @@ kind: Kustomization
 resources:
   - demo-with-error.yaml
   - demo-pod.yaml
-  - flux-kustomization.yaml
