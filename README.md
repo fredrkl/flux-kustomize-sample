@@ -4,8 +4,6 @@ Flux v2 uses the Kustomize controller to apply YAML files from different sources
 
 # Testing apply kustomize build
 
-This is done in the devcontainer.
-
 # Create a cluster
 To create a cluster, run the following command:
 
