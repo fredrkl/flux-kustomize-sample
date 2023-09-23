@@ -1,5 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "mounts": ["source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"],
   "features": {
      "ghcr.io/devcontainers-contrib/features/kubectx-kubens:1": {
         "version": "latest"
