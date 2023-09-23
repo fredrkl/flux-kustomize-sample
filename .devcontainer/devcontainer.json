@@ -10,7 +10,9 @@
     },
     "ghcr.io/devcontainers-contrib/features/kubectl-asdf:2": {}
   },
-  "postCreateCommand": "bash -i ./.devcontainer/setup.sh",
+  //"postCreateCommand": "bash -i ./.devcontainer/setup.sh",
+  "postCreateCommand": "sudo usermod -aG docker ${USER}",
+  "runArgs": ["--privileged"],
   "customizations": {
     "vscode": {
       "settings": {
