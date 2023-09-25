@@ -23,6 +23,9 @@ kind get kubeconfig --name flux-build-demo > ~/.kube/config
 flux build kustomization demo-kustomization --dry-run --path ./demo --kustomization-file ./demo/flux-kustomization.yaml
 ```
 
+!!! warning Failed flux build in K8s
+    A failed flux kustomize build in K8s will not apply any of the resources. If you are installing `CRDs` as part of a Helm chart, and using the `CRDs` in the same `Flux kustomize build` then you will need to apply the `CRDs` first.
+
 ## Builds
 
 [![Flux Build and Deploy](https://github.com/fredrkl/flux-kustomize-sample/actions/workflows/flux-build.yaml/badge.svg)](https://github.com/fredrkl/flux-kustomize-sample/actions/workflows/flux-build.yaml)
