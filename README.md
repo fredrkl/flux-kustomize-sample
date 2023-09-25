@@ -26,6 +26,9 @@ flux build kustomization demo-kustomization --dry-run --path ./demo --kustomizat
 !!! warning Failed flux build in K8s
     A failed flux kustomize build in K8s will not apply any of the resources. If you are installing `CRDs` as part of a Helm chart, and using the `CRDs` in the same `Flux kustomize build` then you will need to apply the `CRDs` first.
 
+## Gotchas
+
+If you are using Apple M1 and want to use ´kind´, please follow the instructions on: <https://docs.docker.com/desktop/release-notes/#for-mac-5>.
 ## Builds
 
 [![Flux Build and Deploy](https://github.com/fredrkl/flux-kustomize-sample/actions/workflows/flux-build.yaml/badge.svg)](https://github.com/fredrkl/flux-kustomize-sample/actions/workflows/flux-build.yaml)
