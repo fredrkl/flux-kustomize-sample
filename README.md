@@ -17,6 +17,12 @@ kind create cluster --name flux-build-demo
 kind get kubeconfig --name flux-build-demo > ~/.kube/config
 ```
 
+## Test applying
+
+```bash
+flux build kustomization demo-kustomization --dry-run --path ./demo --kustomization-file ./demo/flux-kustomization.yaml
+```
+
 ## Builds
 
 [![Flux Build and Deploy](https://github.com/fredrkl/flux-kustomize-sample/actions/workflows/flux-build.yaml/badge.svg)](https://github.com/fredrkl/flux-kustomize-sample/actions/workflows/flux-build.yaml)
